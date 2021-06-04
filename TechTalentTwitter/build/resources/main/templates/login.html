@@ -13,14 +13,14 @@
 <body>
 <div class="container">
     <div th:replace="fragments/navbar"></div>
-    <h2>Welcome!</h2>
+    <h2 style="color: #03506f">Welcome!</h2>
     <form th:action="@{/login}" method="post"><br/>
-        <input type="text" id="username" name="username" th:placeholder="Username" class="form-control"/> <br/>
-        <input type="password" th:placeholder="Password" id="password" name="password" class="form-control"/> <br/>
+        <input type="text" id="username" name="username" th:placeholder="Username" class="form-control" style="color: #03506f"/> <br/>
+        <input type="password" th:placeholder="Password" id="password" name="password" class="form-control" style="color: #03506f"/> <br/>
         <div align="center" th:if="${param.error}">
             <h4 style="color: red">Login unsuccessful.</h4>
         </div>
-        <button class="btn btn-md btn-success btn-block" name="Submit" value="Login" type="Submit">Log in</button>
+        <button class="btn btn-md btn-block" name="Submit" value="Login" type="Submit" style="color: #03506f">Log in</button>
     </form>
 </div>
 <div th:if="${success}" class="container">
